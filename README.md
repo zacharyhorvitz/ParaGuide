@@ -1,4 +1,3 @@
-# ParaGuide
 <h2 align="center">
   ParaGuide
 </h2>
