@@ -1,6 +1,6 @@
 # ParaGuide
 <h2 align="center">
-:plug::robot: ParaGuide: Guided Diffusion Paraphrasers for Plug-and-Play Textual Style Transfer :robot::plug:
+:electric_plug::robot: ParaGuide: Guided Diffusion Paraphrasers for Plug-and-Play Textual Style Transfer :robot::electric_plug:
   
 </h2>
 
