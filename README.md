@@ -6,9 +6,5 @@
 </h3>
 
 
-
-<h3 align="center">
 Code coming soon.
-</h3>
-  
-## Docs
+
