@@ -1,0 +1,14 @@
+Matt was handling most of the data that was collected from the Trent and Desert Sky sites.	Mark, Do you know of any information/analysis we have collected on the Trent and Desert Sky sites? I know that we were collecting data from GA, but Matt was handling most of this. JD
+That's right, fyi.	fyi
+The Desert Sky warranty agreement is placed under the TSA_and_aggreement folder on the service2 network.	I've place electronic copies of the Desert Sky warranty agreement on the service2 network under the TSA_and_aggreement folder for Desert Sky. JD
+The attached update is for the STARlite project.	Please see the attached STARlite project update. JD
+I would appreciate an update on the download of the Curtailment file.	Matt, Can you give us an update on the downloading of the Curtailment file? Thanks, JD
+I am not sure what to make of it.	fyi
+I noticed that you didn't reply to this email.	Noticed that your not on this email. I've been receiving summaries like this for the last month. JD
+That's correct.	FYI
+You or me, how long would it take?	Take a look at this. How long would it take? You or Me?
+That's correct.	FYI
+I will get a CD from Joe Chapman today, we can install it ourselves, since it's an internal product and GEWE has the license.	I will be getting a Visupro CD from Joe Chapman today. We can install it ourselves since it is an internal product and GEWE has the license. JD
+The CURTAIL200206.DB file needs to be loaded from the curtailment computer.	Matt, Just a reminder to down load the CURTAIL200206.DB file from the curtailment computer. JD
+The clock acronym is on the spread sheet as we await the infromation to be added to STAR.	While we await this infromation to be added to STAR here is a spread sheet with the clock acronyms. It may be helpful to pull into Splus as a dataframe from use? JD
+I want to make sure we keep track of the forms that haven't been filled out. I'll need to have Julie update them into the database so we can keep track of them.	Could you fill out any work request forms that have not been completed? I'll have Julie update them into the db so we can keep track. An electronic copy is preferred so we can save time typing one. JD

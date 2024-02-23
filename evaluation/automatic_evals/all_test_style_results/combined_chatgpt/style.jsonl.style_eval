@@ -1,0 +1,1 @@
+{"input_path": "all_test_style_evals/combined_chatgpt/style.jsonl", "decoded": {"cola": 0.7883411475907106, "similarity": 0.5793723946969468, "n": 1915, "_style_confusion": 0.5446475195822454, "_style_joint_fluency": 0.33829242392216513}, "clean": false}

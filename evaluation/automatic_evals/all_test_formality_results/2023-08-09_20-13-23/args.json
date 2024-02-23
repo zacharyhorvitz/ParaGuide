@@ -1,0 +1,1 @@
+{"out_dir": "formal_inferences_test", "assignments_json": null, "model_path": "enron_t5_formality/full_informal_train/2023-08-04-11.45.15/checkpoint-70/", "target_author": null, "sample_key": "val_samples", "task": "informal", "input_file": "../holdout_attribute_splits/formal_splits/formal_0.5_0.5/test_pos_500.tsv"}

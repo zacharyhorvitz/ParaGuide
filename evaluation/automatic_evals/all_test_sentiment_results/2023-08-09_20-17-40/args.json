@@ -1,0 +1,1 @@
+{"out_dir": "sentiment_inferences_test", "assignments_json": null, "model_path": "enron_t5_sentiment/full_negative_train/2023-08-06-13.35.05/checkpoint-90/", "target_author": null, "sample_key": "val_samples", "task": "negative", "input_file": "../holdout_attribute_splits/sentiment_splits/sentiment_0.5_0.5/test_pos_500.tsv"}

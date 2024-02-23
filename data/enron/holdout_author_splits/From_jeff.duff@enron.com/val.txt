@@ -1,0 +1,5 @@
+We should discuss how we would implement this process so I can be prepared to brief Jeff M.	Of course, my only involvement with this was eve's dropping. We should discuss how we would implement this process so I can be prepared to brief Jeff M. JD
+The instructions on how to copy the draft into another document were written in the document that I used for the DRAFT watermark.	Here is the DRAFT watermark I've used. I put instructions in the document on how to copy the draft into another document. -JD
+I think that's true.	FYI
+That's correct.	FYI
+I will provide the spec. to create a table for this data to be stored in.	I am reviewing this document and will provide Patricia with a spec. to create an Oracle table to store this data in. -JD

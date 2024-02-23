@@ -1,0 +1,1 @@
+{"out_dir": "chatgpt_test", "author_directory": "../holdout_author_splits/", "assignments_json": "../holdout_author_splits/assignments.json", "max_examples": 16, "approach": "chatgpt"}

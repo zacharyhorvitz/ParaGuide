@@ -1,0 +1,1 @@
+{"target": "formal", "input_paths": ["paraphrase_data/ENRON/shards/holdout_shards_split/train.txt", "paraphrase_data/ENRON/shards/holdout_shards_split/val.txt", "paraphrase_data/ENRON/shards/holdout_shards_split/test.txt"], "out_dir": "holdout_attribute_splits", "mean_score": 0.7428535223007202, "std_score": 0.4129810035228729, "class_greater_half": 9317.0, "num_examples": 12566}

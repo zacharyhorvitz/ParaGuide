@@ -1,0 +1,1 @@
+{"out_dir": "baseline_eval_test", "author_directory": "holdout_author_splits/", "assignments_json": "holdout_author_splits/assignments.json", "approach": "bert"}

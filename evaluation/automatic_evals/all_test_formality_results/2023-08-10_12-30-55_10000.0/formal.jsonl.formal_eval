@@ -1,0 +1,1 @@
+{"input_path": "all_test_formality_evals/2023-08-10_12-30-55_10000.0/formal.jsonl", "decoded": {"cola": 0.5906869096014603, "accuracy": 0.9609053497942387, "holdout_accuracy": 0.6790123456790124, "similarity": 0.3665956192942856, "n": 486, "holdout_joint_binary": 0.20376518319220543, "holdout_joint_gm": 0.3719179743519377}, "clean": false}

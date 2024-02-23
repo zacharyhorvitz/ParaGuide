@@ -1,0 +1,1 @@
+{"input_file": "formal_scored.tsv", "output_dir": "formal_splits", "min_score": 0.5, "max_score": 0.5, "task": "formal", "train_split": 0.7, "test_split": 0.15, "val_split": 0.15}

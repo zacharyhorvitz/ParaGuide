@@ -1,0 +1,39 @@
+The line attachment is followed by a second one.	--------- Inline attachment follows ---------
+The Inline attachment is followed by the line attachment.	--------- Inline attachment follows ---------
+The attachment is followed by an Inline attachment.	--------- Inline attachment follows ---------
+The line attachment follows the one before it.	--------- Inline attachment follows ---------
+The inline attachment followed by the line attachment is referred to as an inline attachment followed by the line attachment.	--------- Inline attachment follows ---------
+The line attachment is followed by an inline attachment.	--------- Inline attachment follows ---------
+Inline attachment leads to the next one.	--------- Inline attachment follows ---------
+The line attachment followed by the following is what it's called.	--------- Inline attachment follows ---------
+The line attachment is followed by an Inline attachment.	--------- Inline attachment follows ---------
+The line attachment is followed by an inline attachment.	--------- Inline attachment follows ---------
+The attachment follows the one before it.	--------- Inline attachment follows ---------
+The inline attachment follows the one before it.	--------- Inline attachment follows ---------
+The inline attachment is followed by a second one.	--------- Inline attachment follows ---------
+The inline attachment follows the one before it.	--------- Inline attachment follows ---------
+The line attachment is followed by the in line attachment.	--------- Inline attachment follows ---------
+The line attachment has been followed by an Inline attachment.	--------- Inline attachment follows ---------
+The inline attachment follows.	--------- Inline attachment follows ---------
+The line attachment is followed by an Inline attachment.	--------- Inline attachment follows ---------
+Attachion is followed by an Inline attachment.	--------- Inline attachment follows ---------
+The line attachment goes after the inline attachment.	--------- Inline attachment follows ---------
+The inline attachment is followed by the line attachment.	--------- Inline attachment follows ---------
+The line attachment follows the one before it.	--------- Inline attachment follows ---------
+Inline attachment is followed by a line.	--------- Inline attachment follows ---------
+The line attachment follows.	--------- Inline attachment follows ---------
+The attachment follows the one that is inline.	--------- Inline attachment follows ---------
+The line attachment is followed by an inline attachment.	--------- Inline attachment follows ---------
+The inline attachment follows the one before it.	--------- Inline attachment follows ---------
+The line attachment is followed by an Inline attachment.	--------- Inline attachment follows ---------
+The inline attachment is followed by the line attachment.	--------- Inline attachment follows ---------
+The attachment follows the inline attachment.	--------- Inline attachment follows ---------
+The line attachment is followed by an inline attachment.	--------- Inline attachment follows ---------
+Attached is an Inline attachment.	--------- Inline attachment follows ---------
+The inline attachment leads to the next one.	--------- Inline attachment follows ---------
+The attachment follows the inline attachment.	--------- Inline attachment follows ---------
+The line attachment is followed by another one.	--------- Inline attachment follows ---------
+The attachment following the inline one follows the one before it.	--------- Inline attachment follows ---------
+The line attachment is followed by the inline attachment.	--------- Inline attachment follows ---------
+The line attachment follows the one before it.	--------- Inline attachment follows ---------
+The inline attachment follows the one before it.	--------- Inline attachment follows ---------

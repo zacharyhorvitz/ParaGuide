@@ -1,0 +1,1 @@
+{"input_path": "all_test_sentiment_evals/2023-08-11_14-27-35/negative.jsonl", "decoded": {"cola": 0.6431562809348106, "accuracy": 0.178, "holdout_accuracy": 0.466, "similarity": 0.3274317399963038, "n": 500, "holdout_joint_binary": 0.08489658379252069, "holdout_joint_gm": 0.2164271470525424}, "clean": false}

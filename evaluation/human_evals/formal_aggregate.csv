@@ -1,0 +1,4 @@
+,Accuracy,Similar,Well-formedness,Success (SWF)
+formal_mm_ham,0.14,0.31,0.27,0.03
+formal_paraguide_200,0.39,0.54,0.61,0.23
+formal_strap,0.1,0.32,0.04,0.0

@@ -1,0 +1,1 @@
+{"input_path": "all_test_style_evals/2023-08-10_19-30-30_500.0/style.jsonl", "decoded": {"cola": 0.7480213961678293, "similarity": 0.5337686455886392, "n": 1915, "_style_confusion": 0.587467362924282, "_style_joint_fluency": 0.40270944870224507}, "clean": false}

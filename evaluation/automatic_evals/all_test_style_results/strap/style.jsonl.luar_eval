@@ -1,0 +1,1 @@
+{"input_path": "all_test_style_evals/strap/style.jsonl", "decoded": {"cola": 0.8324550451365526, "similarity": 0.5625339015446574, "n": 1915, "_luar_confusion": 0.3185378590078329, "_luar_joint_fluency": 0.21847561061475704}, "clean": false}
