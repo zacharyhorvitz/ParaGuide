@@ -9,7 +9,7 @@ Our paper is available [here](https://arxiv.org/abs/2308.15459).
 
 ### Structure
 
-- [demo/](demo/) contains demo code, demonstrating how to run the full ParaGuide approach to transform texts from formal &#8594; informal.
+- [demo/](demo/) contains demo code, demonstrating how to run the full ParaGuide approach to transform texts from formal &#8594; informal, or to match exemplars.
 
 - [training/](training/) contains the logic for training a paraphrase-conditioned text diffusion model.
 

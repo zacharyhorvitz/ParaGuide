@@ -50,6 +50,8 @@ def mean_pooling(model_output, attention_mask):
     )
 
 
+
+
 def get_style_embedding(
     *,
     model,
@@ -143,6 +145,7 @@ def use_sentiment_model(model, tokenizer, text):
 def compute_style_loss(
     embeds, model, target_embeds, attention_mask=None, model_type='style'
 ):
+    
     current = get_style_embedding(
         inputs_embeds=embeds,
         model=model,
@@ -152,4 +155,4 @@ def compute_style_loss(
     loss = 0
     for target_embed in target_embeds:
         loss += 1 - torch.nn.CosineSimilarity()(current, target_embed)
-    return loss / len(target_embeds)
+    return loss / len(target_embeds) 
