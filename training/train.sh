@@ -10,10 +10,10 @@ hf_cache="~/.cache/huggingface"
 core_lm_name='../models/best_checkpoint/'
 
 # Where to save new checkpoints
-main_log_dir="/mnt/swordfish-pool2/horvitz/test_new_paraguide_train" 
+main_log_dir='/burg/nlp/users/zfh2000/enron_model/' #"/mnt/swordfish-pool2/horvitz/test_new_paraguide_train" 
 
 # Path to huggingface dataset
-tokenized_path='../data/enron/2023-06-22-23.15.35/max_len_50_min_score_None/'
+tokenized_path='../data/enron/2023-06-22-23.15.35/max_len_50_min_score_None_with_style_embeds/'
 
 # Wandb project name
 project_name='paraguide_model_training' 
@@ -71,4 +71,6 @@ HF_HOME=${hf_cache} accelerate launch   \
     --if_create_tokenized_data_file "no" \
     --train_mode ${train_mode} \
     --project_name ${project_name} \
-    --use_sqrt_schedule
+    --use_sqrt_schedule \
+    --use_style_embed \
+    --ctr_embed_dim 512

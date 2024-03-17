@@ -717,8 +717,8 @@ def main():
             batch.pop('attention_mask')
 
             if args.use_style_embed:
-                assert 'style_embed' in batch
-                batch_ctrl_embeds = batch['style_embed']
+                assert 'luar_embedding' in batch
+                batch_ctrl_embeds = batch['luar_embedding']
             elif args.use_label:
                 assert 'label' in batch
                 batch_ctrl_embeds = (
@@ -778,7 +778,7 @@ def main():
                 wandb.log({"train": np.mean(list(mean_losses.values()))})
                 train_losses = {k: [] for k in train_dataloader.keys()}
 
-            if (step + 1) % (args.gradient_accumulation_steps * 1000) == 0:
+            if (step + 1) % (args.gradient_accumulation_steps * 200) == 0:
                 val_steps = 0
                 max_val_steps = 50
                 val_losses = {k: [] for k in eval_dataloader.keys()}
@@ -802,8 +802,8 @@ def main():
                             )
                         val_batch.pop('attention_mask')
                         if args.use_style_embed:
-                            assert 'style_embed' in val_batch
-                            val_batch_ctrl_embeds = val_batch['style_embed']
+                            assert 'luar_embedding' in batch
+                            val_batch_ctrl_embeds = val_batch['luar_embedding']
                         elif args.use_label:
                             assert 'label' in val_batch
                             val_batch_ctrl_embeds = (
@@ -1093,7 +1093,7 @@ def do_diffusion(
         diffusion_embeds = torch.cat((context_inputs_embeds, diffusion_embeds), dim=1)
     if batch_ctrl_embeds is not None:
         assert ctr_embed_projection is not None
-        batch_ctrl_embeds = ctr_embed_projection(batch_ctrl_embeds)
+        batch_ctrl_embeds = ctr_embed_projection(batch_ctrl_embeds).unsqueeze(1)
         diffusion_embeds = torch.cat((batch_ctrl_embeds, diffusion_embeds), dim=1)
 
     outputs = model(inputs_embeds=diffusion_embeds, output_hidden_states=False)
