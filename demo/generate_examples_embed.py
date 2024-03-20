@@ -173,7 +173,6 @@ if __name__ == '__main__':
             args.embed_model_target_embeds.append(luar_embedding) #.detach().cpu().numpy())
         
         # import pdb; pdb.set_trace()
-        args.loss_fn = None
 
 
 
