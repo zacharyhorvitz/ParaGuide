@@ -5,21 +5,33 @@ from urllib.request import urlopen
 import csv
 
 
-def text_to_style(*, model, tokenizer, texts, device, model_type='style'):
-    embeds = []
-    for t in texts:
-        inputs = tokenizer(t, return_tensors='pt')
-        inputs = {k: v.to(device) for k, v in inputs.items()}
-        embeds.append(
-            get_style_embedding(
-                model=model,
-                input_tokens=inputs['input_ids'],
-                attention_mask=inputs['attention_mask'],
-                model_type=model_type,
-            )
-        )
-    return embeds
+# def text_to_style(*, model, tokenizer, texts, device, model_type='style'):
+#     embeds = []
+#     for t in texts:
+#         inputs = tokenizer(t, return_tensors='pt')
+#         inputs = {k: v.to(device) for k, v in inputs.items()}
+#         embeds.append(
+#             get_style_embedding(
+#                 model=model,
+#                 input_tokens=inputs['input_ids'],
+#                 attention_mask=inputs['attention_mask'],
+#                 model_type=model_type,
+#             )
+#         )
+#     return embeds
 
+def text_to_style(*, model, tokenizer, texts, device, model_type='style'):
+    inputs = tokenizer(texts, return_tensors='pt', padding=True, truncation=True, max_length=512)
+    inputs = {k: v.to(device) for k, v in inputs.items()}
+    embeds = get_style_embedding(
+            model=model,
+            input_tokens=inputs['input_ids'],
+            attention_mask=inputs['attention_mask'],
+            model_type=model_type,
+        )
+    
+    embeds = [x for x in embeds]
+    return embeds
 
 def load_style_model():
     tokenizer = AutoTokenizer.from_pretrained('AnnaWegmann/Style-Embedding')

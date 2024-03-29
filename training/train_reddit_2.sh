@@ -12,11 +12,11 @@ core_lm_name='/mnt/swordfish-pool2/horvitz/reddit_hrs_work/reddit_model/reddit_m
 #'../models/best_checkpoint/'
 
 # Where to save new checkpoints
-main_log_dir='/mnt/swordfish-pool2/horvitz/reddit_hrs_work/reddit_luar_cond'
+main_log_dir='/mnt/swordfish-pool2/horvitz/reddit_hrs_work/reddit_wegmann_cond_multi'
 #'/burg/nlp/users/zfh2000/reddit_model_luar_cond/' #"/mnt/swordfish-pool2/horvitz/test_new_paraguide_train" 
 
 # Path to huggingface dataset
-tokenized_path='/mnt/swordfish-pool2/horvitz/reddit_hrs_work/max_len_50_min_score_None_just_input_ids_with_style_embeds/'
+tokenized_path='/mnt/swordfish-pool2/horvitz/reddit_hrs_work/max_len_50_min_score_None_just_input_ids_with_style_embeds_with_style_embeds/'
 #'/burg/home/zfh2000/max_len_50_min_score_None_just_input_ids_with_style_embeds'
 #'/burg/nlp/users/zfh2000/reddit_data/max_len_50_min_score_None_just_input_ids_with_style_embeds/'
 #'../data/enron/2023-06-22-23.15.35/max_len_50_min_score_None_with_style_embeds/'
@@ -24,6 +24,7 @@ tokenized_path='/mnt/swordfish-pool2/horvitz/reddit_hrs_work/max_len_50_min_scor
 # Wandb project name
 project_name='paraguide_model_training' 
 
+#config_path='/home/horvitz/.cache/huggingface/accelerate/default_config_0.yaml'
 config_path='/home/horvitz/.cache/huggingface/accelerate/default_config.yaml'
 #'/burg/home/zfh2000/.cache/huggingface/accelerate/default_config.yaml' #'/home/horvitz/.cache/huggingface/accelerate/default_config.yaml' # run accelerate config to configure
  
@@ -34,10 +35,10 @@ retrain_per_device_eval_batch_size=128
 retrain_learning_rate=5e-6
 retrain_weight_decay=0.01
 retrain_gradient_accumulation_steps=1
-retrain_num_warmup_steps=2000
+retrain_num_warmup_steps=200 #2000
 retrain_max_train_steps=500000
 
-sigma_num_steps=200 # 5000 if pretraining on reddit
+sigma_num_steps=2000 # 5000 if pretraining on reddit
 loss_mode="xe"
 remove_noise_mode="no_dir"
 pa=5
@@ -52,6 +53,7 @@ HF_HOME=${hf_cache} accelerate launch   \
     --config_file ${config_path} \
     --mixed_precision ${precision} \
     --main_process_ip 'localhost' \
+    --main_process_port 29500 \
     --num_processes 3 --num_machines 1 --machine_rank 0 \
     --num_cpu_threads_per_process 4 \
     train.py \
@@ -80,5 +82,5 @@ HF_HOME=${hf_cache} accelerate launch   \
     --project_name ${project_name} \
     --use_sqrt_schedule \
     --use_style_embed \
-    --ctr_embed_dim 512 \
-    --ctr_embed_key "luar_embedding"
+    --ctr_embed_dim 768 \
+    --ctr_embed_key "style_embedding"

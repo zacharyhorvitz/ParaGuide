@@ -3,7 +3,7 @@ set -ex
 
 MODEL_DIR="$(dirname "$0")"
 
-MODEL_DOWNLOAD_DIR='/burg/nlp/users/zfh2000/enron_model' #"$(dirname "$0")" # Feel free to change this to your preferred location
+MODEL_DOWNLOAD_DIR='/mnt/swordfish-pool2/horvitz/enron_luar_paraguide' #'/burg/nlp/users/zfh2000/enron_model' #"$(dirname "$0")" # Feel free to change this to your preferred location
 
 #gdown https://drive.google.com/file/d/1qlIVBGnvjrqxHvFdp0-5WNwZb6iM3pCA/view?usp=sharing --fuzzy -O ${MODEL_DOWNLOAD_DIR}/enron_model.zip
 

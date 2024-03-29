@@ -57,7 +57,8 @@ if __name__ == '__main__':
         'straight_through': False,
         'use_actual': False,
         'ctr_embed_dim': 512,
-        'model_path': '/burg/nlp/users/zfh2000/enron_model/ssd_cs_dbs50/best_checkpoint', #'../models/best_checkpoint/' # requires downloading model
+        'model_path': '/mnt/swordfish-pool2/horvitz/reddit_hrs_work/reddit_luar_cond/ssd_cs_dbs50/best_checkpoint_backup'
+        #'/burg/nlp/users/zfh2000/enron_model/ssd_cs_dbs50/best_checkpoint', #'../models/best_checkpoint/' # requires downloading model
     }
 
     (
@@ -115,7 +116,7 @@ if __name__ == '__main__':
         args.ctr_model.to(args.accelerator.device)
         args.ctr_model.eval()
 
-        target_style_examples = ['Mmmm...I think I agree.', 'Uh...I think you are doing that wrong.', 'Ok...sounds good.']
+        target_style_examples = ['I went to the #Apple store and bought an iPhone!'] #['Mmmm...I think I agree.', 'Uh...I think you are doing that wrong.', 'Ok...sounds good.']
 
         args.target_embeds = text_to_style(
                                 model=args.ctr_model,

@@ -312,6 +312,7 @@ def parse_args():
     parser.add_argument('--self_cond_prob', default=0.5, type=float)
     parser.add_argument('--use_sqrt_schedule', action='store_true')
     parser.add_argument('--project_name', type=str, required=True)
+    parser.add_argument('--ctr_embed_key', type=str, default='luar_embedding')
 
     args = parser.parse_args()
 
@@ -717,8 +718,7 @@ def main():
             batch.pop('attention_mask')
 
             if args.use_style_embed:
-                assert 'luar_embedding' in batch
-                batch_ctrl_embeds = batch['luar_embedding']
+                batch_ctrl_embeds = batch[args.ctr_embed_key]
             elif args.use_label:
                 assert 'label' in batch
                 batch_ctrl_embeds = (
@@ -802,8 +802,7 @@ def main():
                             )
                         val_batch.pop('attention_mask')
                         if args.use_style_embed:
-                            assert 'luar_embedding' in batch
-                            val_batch_ctrl_embeds = val_batch['luar_embedding']
+                            val_batch_ctrl_embeds = val_batch[args.ctr_embed_key]
                         elif args.use_label:
                             assert 'label' in val_batch
                             val_batch_ctrl_embeds = (
