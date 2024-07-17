@@ -14,7 +14,7 @@ dill==0.3.6
 docker-pycreds==0.4.0
 filelock==3.13.1
 frozenlist==1.4.1
-fsspec==2022.5.0
+fsspec==2023.5.0
 gdown==5.1.0
 gitdb==4.0.11
 GitPython==3.1.42
